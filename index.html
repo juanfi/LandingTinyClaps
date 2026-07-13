@@ -135,7 +135,9 @@
           </p>
         </div>
 
-        <form class="signup-form" id="interestForm" name="tiny-claps-interest" method="POST" data-netlify="true" action="https://formsubmit.co/juanfi@gmail.com" netlify>
+        <form class="signup-form" id="interestForm" name="tiny-claps-interest" method="POST" action="https://formsubmit.co/juanfi@gmail.com">
+          <input type="hidden" name="_subject" value="New landing page form submission for Tiny Claps">
+          <input type="hidden" name="_template" value="table">
           <input type="hidden" name="form-name" value="tiny-claps-interest">
           <label>
             Nombre
@@ -178,30 +180,15 @@
             <input name="consent" type="checkbox" required>
             <span>Acepto que se usen estos datos para validar el interés en el proyecto Tiny Claps.</span>
           </label>
-          <button class="button primary full" type="submit">Apuntarme a la lista</button>
+          <button class="button primary full" type="submit" id="interestButton">Apuntarme a la lista</button>
           <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
         </form>
-      </section>
-
-      <section class="validation-panel" aria-label="Panel de validación">
-        <div>
-          <p class="eyebrow">Para el case study</p>
-          <h2>Datos recogidos en este navegador</h2>
-          <p>
-            Este prototipo guarda las respuestas localmente para que puedas descargar un CSV
-            y usarlo como apoyo en la validación inicial.
-          </p>
-        </div>
-        <div class="validation-actions">
-          <strong><span id="leadCount">0</span> registros</strong>
-          <button class="button secondary" id="downloadCsv" type="button">Descargar CSV</button>
-          <button class="text-button" id="clearData" type="button">Borrar datos</button>
-        </div>
       </section>
     </main>
 
     <footer class="footer">
       <p>Tiny Claps · Primeras experiencias teatrales en familia</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
