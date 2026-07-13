@@ -5,12 +5,12 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const formData = new FormData(form);
-  const netlifyData = new URLSearchParams(formData);
+  const bodyData = new URLSearchParams(formData);
 
-  fetch("/", {
+  fetch("https://formsubmit.co/juanfi@gmail.com", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: netlifyData.toString(),
+    body: bodyData.toString(),
   })
     .then(() => {
       form.reset();
