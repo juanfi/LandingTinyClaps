@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tiny Claps | Primeras experiencias teatrales en familia</title>
+    <meta
+      name="description"
+      content="Tiny Claps ayuda a familias con niños de 0 a 6 años a filtrar, preparar y recordar sus primeras experiencias teatrales."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Cabecera">
+      <a class="brand" href="#inicio" aria-label="Tiny Claps">
+        <img src="assets/tiny-claps-logo.png" alt="Tiny Claps" class="brand-logo">
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#familias">Para quién</a>
+        <a href="#lista">Quiero probarlo</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow">Primeras funciones, grandes recuerdos</p>
+          <h1>El copiloto para descubrir el teatro con niños pequeños.</h1>
+          <p class="hero-text">
+            Tiny Claps ayuda a las familias con niños de 0 a 6 años a filtrar obras adecuadas,
+            preparar la experiencia según la edad y seguir conversando después de la función.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#lista">Quiero probarlo</a>
+            <a class="button secondary" href="#como-funciona">Ver la idea</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Ejemplo de acompañamiento">
+          <div class="mini-stage">
+            <img src="assets/tiny-claps-logo.png" alt="" aria-hidden="true">
+          </div>
+          <div class="experience-list">
+            <div>
+              <span>Antes</span>
+              <strong>Una guía sencilla para preparar la función</strong>
+            </div>
+            <div>
+              <span>Durante</span>
+              <strong>Confianza para vivir la experiencia sin improvisar</strong>
+            </div>
+            <div>
+              <span>Después</span>
+              <strong>Ideas para conversar, jugar y recordar juntos</strong>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="problem-band" aria-label="Problema">
+        <div class="section-inner two-columns">
+          <div>
+            <p class="eyebrow">El problema</p>
+            <h2>Elegir una obra infantil no debería llevar horas.</h2>
+          </div>
+          <p>
+            La información básica suele estar dispersa y, aunque aparezca una edad recomendada,
+            muchas familias siguen sin saber si la obra encajará con la atención, sensibilidad
+            e intereses de su hijo. La decisión mezcla logística, confianza y ganas de que la
+            primera experiencia deje una huella bonita.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="como-funciona">
+        <div class="section-heading">
+          <p class="eyebrow">Cómo funciona</p>
+          <h2>De buscar una obra a vivir una experiencia completa.</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <span class="step-number">1</span>
+            <h3>Filtra y compara opciones adecuadas</h3>
+            <p>
+              Busca por edad, precio, localización, horario y duración, y compara fichas claras
+              con tipo de espectáculo, nivel de estímulo y detalles útiles para familias.
+            </p>
+          </article>
+          <article>
+            <span class="step-number">2</span>
+            <h3>Prepara la salida</h3>
+            <p>
+              Una pequeña guía adaptada a la edad para explicar qué va a pasar, despertar
+              curiosidad y llegar al teatro con más tranquilidad.
+            </p>
+          </article>
+          <article>
+            <span class="step-number">3</span>
+            <h3>Alarga la magia</h3>
+            <p>
+              Preguntas, juegos e ideas para retomar la obra en casa sin convertirla en deberes.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section audience" id="familias">
+        <div class="section-inner two-columns">
+          <div>
+            <p class="eyebrow">Para quién</p>
+            <h2>Familias que quieren que el primer teatro sea algo más que un plan.</h2>
+          </div>
+          <div class="audience-copy">
+            <p>
+              Para madres y padres con niños de 0 a 6 años que quieren acercarles al teatro,
+              pero necesitan decidir más rápido, con información más clara y con recursos
+              para acompañar la experiencia antes y después.
+            </p>
+            <p class="quote">
+              “No busco solo una entrada. Quiero saber si esta obra es para mi hijo y cómo
+              puedo ayudarle a disfrutarla.”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="signup-section" id="lista">
+        <div class="signup-copy">
+          <p class="eyebrow">Acceso anticipado</p>
+          <h2>¿Te gustaría probar Tiny Claps?</h2>
+          <p>
+            Deja tus datos y ayúdame a validar si esta idea conecta con otras familias.
+            También recibirás las primeras guías de prueba cuando estén listas.
+          </p>
+        </div>
+
+        <form class="signup-form" id="interestForm" name="tiny-claps-interest" method="POST" data-netlify="true" netlify>
+          <input type="hidden" name="form-name" value="tiny-claps-interest">
+          <label>
+            Nombre
+            <input name="name" type="text" autocomplete="name" placeholder="Tu nombre" required>
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" placeholder="tu@email.com" required>
+          </label>
+          <label>
+            Edad del niño o niña
+            <select name="childAge" required>
+              <option value="">Selecciona una opción</option>
+              <option>0-12 meses</option>
+              <option>1 año</option>
+              <option>2 años</option>
+              <option>3 años</option>
+              <option>4 años</option>
+              <option>5 años</option>
+              <option>6 años</option>
+              <option>Más de 6 años</option>
+            </select>
+          </label>
+          <label>
+            ¿Qué te cuesta más al elegir una obra?
+            <select name="friction" required>
+              <option value="">Selecciona una opción</option>
+              <option>Encontrar información básica clara</option>
+              <option>Saber si es adecuada para su edad real</option>
+              <option>Valorar duración, ruido, oscuridad o estímulos</option>
+              <option>Preparar la experiencia antes de ir</option>
+              <option>Retomar la experiencia después</option>
+            </select>
+          </label>
+          <label>
+            Cuéntame algo que te haría decidir con más tranquilidad
+            <textarea name="comment" rows="4" placeholder="Por ejemplo: saber si hay oscuridad, tener una guía previa, ver opiniones de otras familias..."></textarea>
+          </label>
+          <label class="checkbox">
+            <input name="consent" type="checkbox" required>
+            <span>Acepto que se usen estos datos para validar el interés en el proyecto Tiny Claps.</span>
+          </label>
+          <button class="button primary full" type="submit">Apuntarme a la lista</button>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="validation-panel" aria-label="Panel de validación">
+        <div>
+          <p class="eyebrow">Para el case study</p>
+          <h2>Datos recogidos en este navegador</h2>
+          <p>
+            Este prototipo guarda las respuestas localmente para que puedas descargar un CSV
+            y usarlo como apoyo en la validación inicial.
+          </p>
+        </div>
+        <div class="validation-actions">
+          <strong><span id="leadCount">0</span> registros</strong>
+          <button class="button secondary" id="downloadCsv" type="button">Descargar CSV</button>
+          <button class="text-button" id="clearData" type="button">Borrar datos</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Tiny Claps · Primeras experiencias teatrales en familia</p>
+    </footer>
+  </body>
+</html>
